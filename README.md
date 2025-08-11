@@ -1,6 +1,9 @@
 🔗 Gerador de QR Code com Favicon
 
 Este projeto em Python gera QR Codes para URLs, com a funcionalidade de inserir automaticamente o favicon (ícone) do site no centro. É uma ótima ferramenta para criar QR Codes personalizados e visualmente atraentes para seus projetos ou portfólio.
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
 ✨ Funcionalidades
 
     Geração de QR Code: Cria QR Codes padrão para qualquer URL.
@@ -14,7 +17,7 @@ Este projeto em Python gera QR Codes para URLs, com a funcionalidade de inserir 
     Suporte a Múltiplos URLs: O script pode gerar vários QR Codes de uma só vez a partir de um dicionário de sites.
 
     Organização de Saída: Salva todos os QR Codes em uma pasta output/ para fácil acesso.
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
 🛠 Tecnologias Utilizadas
 
     Python 3: A linguagem principal do projeto.
