@@ -1,77 +1,95 @@
-🔗 Gerador de QR Code com Favicon
+# 🔗 Gerador de QR Code com Favicon
 
-Este projeto em Python gera QR Codes para URLs, com a funcionalidade de inserir automaticamente o favicon (ícone) do site no centro. É uma ótima ferramenta para criar QR Codes personalizados e visualmente atraentes para seus projetos ou portfólio.
+Projeto em Python que gera QR Codes para URLs, inserindo automaticamente o favicon (ícone) do site no centro do QR Code. Uma ferramenta prática para criar QR Codes personalizados, elegantes e visualmente atraentes para seus projetos ou portfólio.
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
 
-✨ Funcionalidades
+---
 
-    Geração de QR Code: Cria QR Codes padrão para qualquer URL.
+## ✨ Funcionalidades
 
-    Favicon Automático: Tenta baixar o favicon do site e o centraliza no QR Code.
+* **Geração de QR Code:** Cria QR Codes padrão para qualquer URL.
+* **Favicon automático:** Baixa o favicon do site e o posiciona no centro do QR Code.
+* **Design elegante:** Redimensiona o favicon para se ajustar perfeitamente no QR Code, sem comprometer a leitura.
+* **Fallback inteligente:** Caso o favicon não seja encontrado, gera um QR Code simples e funcional.
+* **Suporte a múltiplas URLs:** Gera vários QR Codes a partir de um dicionário de sites.
+* **Organização da saída:** Salva todos os QR Codes na pasta `output/` para fácil acesso.
 
-    Design Elegante: O favicon é redimensionado para se ajustar perfeitamente ao centro do QR Code.
+---
 
-    Modo de Fallback: Se o favicon não puder ser baixado, um QR Code simples e funcional é gerado.
+## 🛠 Tecnologias utilizadas
 
-    Suporte a Múltiplos URLs: O script pode gerar vários QR Codes de uma só vez a partir de um dicionário de sites.
+* **Python 3** — Linguagem principal do projeto.
+* **qrcode** — Biblioteca para geração dos QR Codes.
+* **Pillow (PIL)** — Manipulação e edição de imagens.
+* **requests** — Para realizar requisições HTTP e baixar os favicons.
 
-    Organização de Saída: Salva todos os QR Codes em uma pasta output/ para fácil acesso.
+---
 
-🛠 Tecnologias Utilizadas
+## 📦 Instalação e execução
 
-    Python 3: A linguagem principal do projeto.
+Siga os passos abaixo para rodar o projeto localmente.
 
-    qrcode: Biblioteca para a geração do QR Code.
+1. Clone o repositório:
 
-    Pillow (PIL): Usada para manipulação de imagens, como redimensionar e colar o favicon no QR Code.
+```bash
+git clone https://github.com/seuusuario/seuprojeto.git
+cd seuprojeto
+```
 
-    requests: Biblioteca para fazer requisições HTTP e baixar o favicon do site.
+2. (Opcional) Crie e ative um ambiente virtual:
 
-📦 Instalação e Execução
+* Linux / macOS:
 
-Siga os passos abaixo para começar a usar o projeto.
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
 
-    Clone o repositório:
+* Windows:
 
-    git clone https://github.com/seuusuario/seuprojeto.git
-    cd seuprojeto
+```powershell
+python -m venv venv
+venv\Scripts\activate
+```
 
-    (Opcional) Crie um ambiente virtual:
+3. Instale as dependências:
 
-    python -m venv venv
-    # Ative o ambiente virtual
-    # Linux/Mac:
-    source venv/bin/activate
-    # Windows:
-    venv\Scripts\activate
+```bash
+pip install -r requirements.txt
+```
 
-    Instale as dependências:
-    O arquivo requirements.txt lista todas as bibliotecas necessárias.
+4. Execute o script principal:
 
-    pip install -r requirements.txt
+```bash
+python main.py
+```
 
-    Execute o script:
-    Basta rodar o arquivo principal para gerar os QR Codes.
+---
 
-    python main.py
+## 📂 Estrutura de saída
 
-📂 Estrutura de Saída
+Ao rodar o script, será criada a pasta `output/` contendo os arquivos gerados:
 
-Ao executar o script, a pasta output/ será criada com os seguintes arquivos:
-
-📂 output/
+```
+output/
 ├── python.png
 ├── qrcode_google.png
 ├── qrcode_github.png
 ├── qrcode_openai.png
 └── qrcode_stackoverflow.png
+```
 
-🖼 Exemplo de Saída
+---
 
-Aqui está um exemplo de como o QR Code final se parece.
+## 🖼 Exemplo de saída
 
-Exemplo do QR Code gerado para o site da Python.org
-📄 Licença
+Abaixo, exemplo do QR Code gerado para o site oficial do Python:
 
-Este projeto está licenciado sob a MIT License.
+![Exemplo QR Code Python](output/python.png)
+
+---
+
+## 📄 Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
